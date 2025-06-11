@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Landing Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background: #1f1f1f;
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 50px;
+      background-color: #fff;
+      flex-wrap: wrap;
+    }
+
+    .hero img {
+      width: 45%;
+      max-width: 500px;
+      border-radius: 12px;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding: 0 40px;
+      min-width: 300px;
+    }
+
+    .hero-text h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-text button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 60px 30px;
+      background: #f1f1f1;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      flex: 1;
+      margin: 20px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #e6f0ff;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .cta button {
+      background-color: #28a745;
+      color: white;
+      padding: 14px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .hero, .features {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .hero-text {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>SmartGadget</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#features">Features</a>
+      <a href="#buy">Buy</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://www.bhphotovideo.com/images/images2500x2500/ematic_esw454w_smart_watch_1039958.jpg" alt="Product Image">
+    <div class="hero-text">
+      <h2>The Future of Smart Tech</h2>
+      <p>Introducing SmartGadget – your ultimate companion for productivity, health, and fun. Sleek design, powerful performance.</p>
+      <button>Shop Now</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="feature">
+      <h3>Long Battery Life</h3>
+      <p>Up to 7 days on a single charge. Stay connected longer.</p>
+    </div>
+    <div class="feature">
+      <h3>Smart Health Tracker</h3>
+      <p>Monitor heart rate, sleep, steps, and more with precision sensors.</p>
+    </div>
+    <div class="feature">
+      <h3>Water Resistant</h3>
+      <p>IP68-certified design – perfect for everyday use and adventure.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="buy" class="cta">
+    <h2>Order Now and Get 10% Off!</h2>
+    <button>Buy Now</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SmartGadget Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
